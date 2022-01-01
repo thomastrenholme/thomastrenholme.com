@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thomas Trenholme Portfolio Website</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header> 
+            <div class="logoT">
+                <!-- <img src="images/silloute 1920 1080.png" alt=""> -->
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger">
+
+                </span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#aboutMeArea" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#myProjects" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction / Home-->
+        <section class="portfolio-item-individual__intro" id="home">
+            <h1 class="section__title section__title--intro">
+                 <strong></strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">thomasTrenholme/arcBot</p>
+            <img src="images/portfolio imgs/ArcbotImg.png" alt="ArcBot title screen" class="intro__img">
+        </section>
+
+        <li class="portfolio-item-individual__languages">
+            <img src="images/portfolio imgs/python.png" class="portfolio-item-individual__languages__image" alt="JavaScript">
+            <img src="images/portfolio imgs/selenium.png" class="portfolio-item-individual__languages__image" alt="HTML">
+        </li>
+
+        <div class="portfolio-item-individual">
+            <p>ArcBot was a python project developed with selenium in early 2021 that served to automatically reserve Aztec Recreation Center (ARC) and Aztec Aquaplex exercise time slots for the user. Because of the Covid-19 Pandemic,
+                 San Diego State University decided to place strict capacity limits on the ARC and Aquaplex and implemented a reservation of time slots system where members of the ARC could log on to the university hosted website and
+                 reserve exercise time periods no more than 48 hours prior. However, due to the strict capacity limitations, these slots quickly filled up and it rapidly became extremely cumbersome to have to reserve these slots
+                 exactly on time or risk losing out on going to the gym.
+            </p>
+            <img src="images/portfolio imgs/weightroom arc.jpg" alt="A Background image for the portfolio work description" class="portfolio-item-individual__image">
+            <p>ArcBot, built with Selenium and EasyGUI, allowed users to easily login and reserve time slots with minimal effort required. Similar to many web-scraping bots around today, ArcBot waited until exactly 48Hours prior
+                to the desired time slot and quickly placed a reservation. However, if a reservation was full, ArcBot would run in the background checking the status of the time slot every 30 seconds until a slot opened, then snagged it. This 
+                program quickly became popular in my circle of friends at San Diego State and served its purpose well until the ARC and Aquaplex fully reopened in late Fall 2021.
+            </p>
+            <a class="pokerLink" href="https://github.com/thomastrenholme/arcBot">arcBot github page</a>
+            <img src="images/portfolio imgs/aquaplex.jpg" alt="An in game minecraft image" class="portfolio-item-individual__image">
+        </div>
+
+
+        <footer class="footer">
+            <a href="mailto:thomas.trenholme@gmail.com" class="footer__link">thomas.trenholme@gmail.com</a>
+            <ul class="social-medias">
+                <li class="social-medias__item">
+                    <a class ="social-medias__link" href="https://github.com/thomastrenholme">
+                        <i class="fab fa-gitkraken"></i>
+                    </a>
+                    
+                </li>
+
+                <li class="social-medias__item">
+                    <a class ="social-medias__link" href="https://kaggle.com">
+                        <i class="fab fa-kaggle"></i>
+                    </a>
+                </li>
+
+                <li class="social-medias__item">
+                    <a class ="social-medias__link" href="https://instagram.com/thomastrenholme">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    
+                </li>
+
+                <li class="social-medias__item">
+                    <a class ="social-medias__link" href="https://www.linkedin.com/in/thomastrenholme-93868219b/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="Javascript/index.js"></script>
+    </body>
+</html> 

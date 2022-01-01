@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thomas Trenholme Portfolio Website</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header> 
+            <div class="logoT">
+                <!-- <img src="images/silloute 1920 1080.png" alt=""> -->
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger">
+
+                </span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#aboutMeArea" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#myProjects" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction / Home-->
+        <section class="portfolio-item-individual__intro" id="home">
+            <h1 class="section__title section__title--intro">
+                 <strong></strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">thomasTrenholme/greatBarrierReef</p>
+            <img src="images/portfolio imgs/COTS.jpeg" alt="ArcBot title screen" class="intro__img">
+        </section>
+
+        <li class="portfolio-item-individual__languages">
+            <img src="images/portfolio imgs/python.png" class="portfolio-item-individual__languages__image" alt="JavaScript">
+            <img src="images/portfolio imgs/tensorflow.png" class="portfolio-item-individual__languages__image" alt="tensorFlow">
+        </li>
+
+        <div class="portfolio-item-individual">
+            <p>Partnering with google and their tensorflow library, Kaggle.com has offered a competition to help Australia's Great Barrier Reef. This competition requires the use of a Convolutional Neural Network (CNN) and 
+                attempts to challenge entrants in creating the most accurate way to successfully identify and recognize Crown Of Thorns Starfish (COTS) from a dataset of underwater images. Because of the amount of noise and
+                suboptimal processing conditions of the images, pre-processing and taking a targeted approach in training the CNN is extremely important. Google has pledged to take the winning code and use it in conjunction
+                with its team to remove this invasive starfish species from Australia's Great Barrier Reef.
+            </p>
+            <img src="images/portfolio imgs/reef background.jpg" alt="A Background image for the portfolio work description" class="portfolio-item-individual__image">
+            <p>My partner, Kellen Sabhlok, and I are in the process of creating and training an accurate CNN to fit the needs of this competition and allow us to identify the COTS within these underwater images. Currently,
+                we are researching many different approaches to this problem and comparing and contrasting the available strategies that exist to deal with image processing situations similar to this.
+            </p>
+            <a href="https://www.kaggle.com/c/tensorflow-great-barrier-reef">Kaggle Competition page</a>
+            <img src="images/portfolio imgs/starfishData.png" alt="An image of the starfish data" class="portfolio-item-individual__image">
+        </div>
+
+
+        <footer class="footer">
+            <a href="mailto:thomas.trenholme@gmail.com" class="footer__link">thomas.trenholme@gmail.com</a>
+            <ul class="social-medias">
+                <li class="social-medias__item">
+                    <a class ="social-medias__link" href="https://github.com/thomastrenholme">
+                        <i class="fab fa-gitkraken"></i>
+                    </a>
+                    
+                </li>
+
+                <li class="social-medias__item">
+                    <a class ="social-medias__link" href="https://kaggle.com">
+                        <i class="fab fa-kaggle"></i>
+                    </a>
+                </li>
+
+                <li class="social-medias__item">
+                    <a class ="social-medias__link" href="https://instagram.com/thomastrenholme">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    
+                </li>
+
+                <li class="social-medias__item">
+                    <a class ="social-medias__link" href="https://www.linkedin.com/in/thomastrenholme-93868219b/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="Javascript/index.js"></script>
+    </body>
+</html> 
