@@ -514,16 +514,13 @@ header{
 .portfolio-item-individual__languages{
     list-style: none;
     display: flex;
-    max-width: 100%;
-    width: auto;
-    height: auto;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .portfolio-item-individual__languages__image{
-    width: auto ;
-    max-width: 100% ;
-    height: auto ;
+    max-width: 33% ;
+    padding: 0 1em;
 }
 
 .pokerLink{
