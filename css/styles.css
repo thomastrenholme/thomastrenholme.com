@@ -514,7 +514,9 @@ header{
 .portfolio-item-individual__languages{
     list-style: none;
     display: flex;
-    max-width: 1000px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
     margin: 0 auto;
 }
 
