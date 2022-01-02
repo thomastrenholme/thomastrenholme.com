@@ -519,7 +519,6 @@ header{
 }
 
 .portfolio-item-individual__languages__image{
-    max-height: 250px;
     width: auto ;
     max-width: 100% ;
     height: auto ;
