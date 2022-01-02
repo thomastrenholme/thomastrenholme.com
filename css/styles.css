@@ -499,6 +499,9 @@ header{
     max-width: 1000px;
     margin: 0 auto;
     box-shadow: var(--bs);
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
 }
 
 .portfolio-item-individual__title{
@@ -516,8 +519,10 @@ header{
 }
 
 .portfolio-item-individual__languages__image{
-    max-width: 250px;
     max-height: 250px;
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
 }
 
 .pokerLink{
