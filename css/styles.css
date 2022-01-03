@@ -19,8 +19,8 @@
     --clr--accent: #800000;
     --clr-purple: #8000aa;
 
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
+    --fs-h1: 2.5rem;
+    --fs-h2: 2.0rem;
     --fs-h3: 1.25rem;
 
     --fs-body: 1rem;
@@ -32,8 +32,8 @@
 
 @media (min-width: 800px) {
     :root {
-        --fs-h1: 4.5rem;
-        --fs-h2: 3.75rem;
+        --fs-h1: 4rem;
+        --fs-h2: 3rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
 
@@ -289,7 +289,7 @@ header{
 
 .section__title--services {
     padding-top: 2em;
-    color: var(--clr-purple);
+    color: var(--clr-light);
     position: relative;
 }
 
