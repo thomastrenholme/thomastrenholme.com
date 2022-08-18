@@ -112,6 +112,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section__title--intro{
+    margin-left: .25em;
     font-weight: var(--fw-reg);
 }
 
@@ -244,6 +245,7 @@ header{
 .intro__img {
     box-shadow: var(--bs);
     margin-right: 2em;
+    margin-bottom: .5em;
 }
 
 @media (min-width: 600px) {
@@ -404,16 +406,17 @@ header{
 .portfolio{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 1em;
 }
 
 .portfolio__item{
-    background: var(--clr--accent);
+    background: var(--clr-dark);
     overflow: hidden;
 }
 
 .portfolio__item:focus{
     position: relative;
-    z-index: 2;
+    z-index: 50;
 }
 .portfolio__img{
     transition: 
@@ -423,7 +426,7 @@ header{
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
+    transform: scale(1.1);
     opacity: .5;
 }
 
@@ -477,6 +480,14 @@ header{
 
 /**Portfolio items and their own html pages*/
 
+
+.portfolio_title{
+    font-size: var(--fs-h1);
+    font-weight: var(--fw-bold);
+    margin: 1em auto;
+    display: table;
+    text-align: center;
+}
 .portfolio-item-individual{
     padding: 0 2em 2em;
     max-width: 1000px;
@@ -527,4 +538,22 @@ header{
 .pokerLink{
     margin: 0 auto;
     text-align: center;
+}
+
+
+/** unix imgs grid */
+
+.unix-imgs-grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 25%);
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+.unix-img{
+    box-shadow: var(--bs);
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
 }

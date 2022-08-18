@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thomas Trenholme Portfolio Website</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <link rel="stylesheet" href="css/styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alike&family=Do+Hyeon&display=swap" rel="stylesheet">
+
+        <link rel="shortcut icon" href="images/portfolio imgs/favicon.ico" />
+
+    </head>
+
+    <body>
+        <header> 
+            <div class="logoT">
+                <!-- <img src="images/silloute 1920 1080.png" alt=""> -->
+            </div>
+
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger">
+
+                </span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#aboutMeArea" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="index.html#myProjects" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction / Home-->
+        <section class="portfolio-item-individual__intro" id="home">
+            <h1 class="section__title section__title--intro">
+                 <strong></strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">thomasTrenholme/unixadmin</p>
+        </section>
+
+        <h1 class="portfolio_title">
+            <strong>UNIX/Linux System Administration</strong>
+        </h1>
+
+
+
+        <div class="portfolio-item-individual">
+            <p>During Summer 2022, I had the pleasure of taking CS 470 Unix System Administration with Professor Bartoli at San Diego State
+                University. During the 12-week course, I set up a private business network consisting of a DNS and openLDAP hosting 
+                server via openbsd, a mail server via freebsd, an NFS file hosting server via almalinux, a docker containerized web server via 
+                Ubuntu that hosted an nginx server and portainer dashboard, an AIX server via IBM, a solaris server with openIndiana, a backups
+                hosting server with ESXI, and a gitlab server with microsoft Azure.
+            </p>
+
+            <span class="unix-imgs-grid">
+                <img src="images/portfolio imgs/openbsd.png" class="unix-img" alt="A picture of a unix service">
+                <img src="images/portfolio imgs/freebsd.png" class="unix-img" alt="A picture of a unix service">
+                <img src="images/portfolio imgs/almalinux.png" class="unix-img" alt="A picture of a unix service">
+                <img src="images/portfolio imgs/ubuntu.png" class="unix-img" alt="A picture of a unix service">
+                <img src="images/portfolio imgs/wsl.png" class="unix-img" alt="A picture of a unix service">
+                <img src="images/portfolio imgs/aix.png" class="unix-img" alt="A picture of a unix service">
+                <img src="images/portfolio imgs/oi.png" class="unix-img" alt="A picture of a unix service">
+                <img src="images/portfolio imgs/azure.png" class="unix-img" alt="A picture of a unix service">
+                <img src="images/portfolio imgs/gitlab.png" class="unix-img" alt="A picture of a unix service">
+            </span>
+            
+            <p>Creating all of these services and servers was a fufilling experience that has allowed me to gain a great amount of knowledge surrounding
+                the Unix/Linux system administration field. Alongside with taking Operating Systems in Spring 2022 at San Diego State University, I have
+                found myself a great deal of pleasure working within Linux and being a system administrator.
+            </p>
+        </div>
+
+
+        <footer class="footer">
+            <a href="mailto:thomas.trenholme@gmail.com" class="footer__link">thomas.trenholme@gmail.com</a>
+            <ul class="social-medias">
+                <li class="social-medias__item">
+                    <a class ="social-medias__link" href="https://github.com/thomastrenholme">
+                        <i class="fab fa-gitkraken"></i>
+                    </a>
+                    
+                </li>
+
+                <li class="social-medias__item">
+                    <a class ="social-medias__link" href="https://leetcode.com/gorillaCode/">
+                        <i class="fa-solid fa-code-branch"></i>
+                    </a>
+                </li>
+
+                <li class="social-medias__item">
+                    <a class ="social-medias__link" href="https://instagram.com/thomastrenholme">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    
+                </li>
+
+                <li class="social-medias__item">
+                    <a class ="social-medias__link" href="https://www.linkedin.com/in/thomastrenholme-93868219b/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="Javascript/index.js"></script>
+        <script src="https://kit.fontawesome.com/887ca81e8b.js" crossorigin="anonymous"></script>
+    </body>
+</html> 
