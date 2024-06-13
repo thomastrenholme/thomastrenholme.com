@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Boggle Board</title>
+  <link rel="stylesheet" href="css/boggle.css">
+</head>
+<body>
+<h1>Big Boggle Board</h1>
+<div id="board-container" class="blur"></div>
+<div id="timer"></div>
+<button id="start-timer">Start Timer</button>
+
+<script src="Javascript/boggleBoardCreator.js"></script>
+</body>
+</html>
+
+<script src="Javascript/boggleBoardCreator.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const boardCreator = new BigBoggleBoardCreator();
+    const board = boardCreator.createBoard();
+
+    const boardContainer = document.getElementById('board-container');
+    const boardTable = document.createElement('table');
+
+    for (let i = 0; i < 5; i++) {
+      const row = document.createElement('tr');
+      for (let j = 0; j < 5; j++) {
+        const cell = document.createElement('td');
+        cell.textContent = board.board[i][j];
+        row.appendChild(cell);
+      }
+      boardTable.appendChild(row);
+    }
+
+    boardContainer.appendChild(boardTable);
+
+    const timerElement = document.getElementById('timer');
+    const startTimerButton = document.getElementById('start-timer');
+
+    startTimerButton.addEventListener('click', function() {
+      this.style.display = 'none'; // Hide the start button
+      boardContainer.classList.remove('blur'); // Remove the blur effect
+      startTimer();
+    });
+
+    let timeLeft = 180; // 3 minutes in seconds
+    let timerInterval;
+
+    function startTimer() {
+      updateTimer();
+      timerInterval = setInterval(countdown, 1000);
+    }
+
+    function updateTimer() {
+      const minutes = Math.floor(timeLeft / 60);
+      const seconds = timeLeft % 60;
+      timerElement.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    }
+
+    function countdown() {
+      updateTimer();
+      if (timeLeft === 0) {
+        clearInterval(timerInterval);
+        timerElement.textContent = "Time's up!";
+      } else {
+        timeLeft--;
+      }
+    }
+  });
+</script>
+</body>
+</html>
